@@ -1,0 +1,10 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: clean install
+    image: openjdk:11-jdk-slim
+    commands:
+      - ./mvnw clean install
